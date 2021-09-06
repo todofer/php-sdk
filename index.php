@@ -16,7 +16,7 @@ $appName = explode('.', $domain)[0];
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="description" content="Official PHP SDK for Mercado Libre's API.">
         <meta name="keywords" content="API, PHP, Mercado Libre, SDK, meli, integration, e-commerce">
-        <title>Mercado Libre PHP SDK</title>
+        <title>Mercada Libre PHP SDK</title>
         <link rel="stylesheet" href="/getting-started/style.css" />
         <script src="script.js"></script>
     </head>
