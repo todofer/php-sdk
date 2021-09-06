@@ -9,7 +9,7 @@ $appId = getenv('3889916536050367');
 $secretKey = getenv('lBWtsgtedsxo6WJODvoez6l8f6Dqg8I0');
 
 /* The Redirect url */
-$redirectURI = getenv('Redirect_URI');
+$redirectURI = getenv('https://todofer.herokuapp.com/');
 
 /* The site id of the country where your application will work.
 If you don't know your site_id go to our sites resources: https://api.mercadolibre.com/sites  */
@@ -20,10 +20,10 @@ $siteId = 'MLA';
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //If you don't use Heroku use the next config
 
-// $appId = 'App_ID';
+// $appId = '3889916536050367';
 
-// $secretKey = 'Secret_Key';
+// $secretKey = 'lBWtsgtedsxo6WJODvoez6l8f6Dqg8I0';
 
-// $redirectURI = 'Redirect_URI';
+// $redirectURI = 'https://todofer.herokuapp.com/';
 
 // $siteId = 'MLA';
