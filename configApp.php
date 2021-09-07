@@ -6,7 +6,7 @@
 $appId = getenv('Redirect_URI');
 
 /* Your Secret Key */
-$secretKey = getenv('lBWtsgtedsxo6WJODvoez6l8f6Dqg8I0');
+$secretKey = getenv('Secret_Key');
 
 /* The Redirect url */
 $redirectURI = getenv('https://todofer.herokuapp.com/');
