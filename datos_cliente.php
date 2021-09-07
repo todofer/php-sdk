@@ -43,7 +43,7 @@ $appName = explode('.', $domain)[0];
             <h3>Hola desarrollador</h3>
             <p>Esta es una aplicación de muestra, implementada en Heroku con PHP SDK de Mercado Libre. ¡Siéntete libre de usarlo como base para comenzar a construir tu increíble aplicación!</p>
             
-            curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/sites
+            <? curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/sites; ?>
 
 
             <hr>
