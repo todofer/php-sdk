@@ -5,7 +5,7 @@ require 'configApp.php';
 
 $domain = $_SERVER['HTTP_HOST'];
 $appName = explode('.', $domain)[0];
-$$access_token = 
+$$access_token = $_SESSION['access_token'];
 
 ?>
 
