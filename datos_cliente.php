@@ -27,7 +27,7 @@ $$access_token =
         <?php
             echo $access_token , '/n';
             echo $domain , '/n';
-            echo $appName;
+            echo $appName, '/n';
         ?>
     </body>
 
