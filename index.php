@@ -134,9 +134,9 @@ $appName = explode('.', $domain)[0];
             <hr>
             <div class="row">
                 <div class="col-md-6">
-                    <h3>Publish an Item</h3>
+                    <h3>Publicar un artículo</h3>
                     <p>
-                        This is a example of how to list an item in <b>MLB</b> (Brasil).
+                        Este es un ejemplo de cómo listar un elemento en <b>MLB</b> (Brasil).
                        <br /> <b>Necesita estar autenticado para que funcione.</b>
                        <br /> Para poder publicar un artículo en otro país, <a href="https://github.com/mercadolibre/php-sdk/blob/master/examples/example_list_item.php">por favor actualice esto file</a>, con valores de acuerdo con el ID del sitio donde funciona su aplicación, como <b>category_id</b> y <b>currency</b>.
                      <br />
@@ -169,15 +169,15 @@ $appName = explode('.', $domain)[0];
 
                     if($_GET['code'] && $_GET['publish_item']) {
 
-                        // If the code was in get parameter we authorize
+                        // Si el código estaba en el parámetro get, autorizamos
                         $user = $meli->authorize($_GET['code'], $redirectURI);
 
-                        // Now we create the sessions with the authenticated user
+                        // Ahora creamos las sesiones con el usuario autenticado
                         $_SESSION['access_token'] = $user['body']->access_token;
                         $_SESSION['expires_in'] = $user['body']->expires_in;
                         $_SESSION['refresh_token'] = $user['body']->refresh_token;
 
-                        // We can check if the access token in invalid checking the time
+                        // Podemos comprobar si el token de acceso no es válido comprobando la hora.
                         if($_SESSION['expires_in'] + time() + 1 < time()) {
                             try {
                                 print_r($meli->refreshAccessToken());
