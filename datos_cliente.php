@@ -25,8 +25,8 @@ $access_token = 0
     <body>
         <?php
             echo $access_token;
-            echo $domain
-            echo $appName
+            echo $domain;
+            echo $appName;
     </body>
 
     </html>
