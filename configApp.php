@@ -3,7 +3,7 @@
 /* Go to My Apps dashboard: https://developers.mercadolibre.com.ar/apps/home, and get the information you need in order to the following enviroment variables */
 
 /* Your Application Id */
-$appId = getenv('Redirect_URI');
+$appId = getenv('App_ID');
 
 /* Your Secret Key */
 $secretKey = getenv('Secret_Key');
