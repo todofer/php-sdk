@@ -5,7 +5,7 @@ require 'configApp.php';
 
 $domain = $_SERVER['HTTP_HOST'];
 $appName = explode('.', $domain)[0];
-$$access_token = $_SESSION['access_token'];
+$access_token = 'APP_USR-3889916536050367-090719-d280ae363e4d0250f5ad5364e9a4545c-380281361';
 
 ?>
 
@@ -28,7 +28,7 @@ $$access_token = $_SESSION['access_token'];
             echo $access_token , '<br>';
             echo $domain , '<br>';
             echo $appName, '<br>';
-            curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/sites;
+            curl -X GET -H 'Authorization: Bearer $access_token' https://api.mercadolibre.com/sites;
         ?>
     </body>
 
