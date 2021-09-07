@@ -24,8 +24,8 @@ $appName = explode('.', $domain)[0];
 
     <body>
         <?php
-            echo $access_token;
-            echo $domain;
+            echo $access_token + '/n';
+            echo $domain + '/n';
             echo $appName;
         ?>
     </body>
