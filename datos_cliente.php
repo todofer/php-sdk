@@ -50,6 +50,10 @@ $appName = explode('.', $domain)[0];
             <div class="row">
                 <h3>Sus credenciales</h3>
                 <div class="row-info col-sm-3 col-md-3">
+                    <b>access_token: </b>
+                    <?php echo $access_token; ?>
+                </div>
+                <div class="row-info col-sm-3 col-md-3">
                     <b>App_Id: </b>
                     <?php echo $appId; ?>
                 </div>
