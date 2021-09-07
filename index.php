@@ -59,23 +59,23 @@ $appName = explode('.', $domain)[0];
                     <p>To start, <a href="https://developers.mercadolibre.com.ar/apps/home">go to your My Apps dashboard</a> and update your application's <b>redirect URI</b> to match the one Heroku is running: <br />
                         <code><?php echo 'https://'.$domain; ?></code>.
                         <br />
-                        <br /> If you deployed this app by the Heroku Button, you need to clone this aplication to your computer by running the following on a command line shell:
+                        <br /> Si implementó esta aplicación con el botón Heroku, debe clonar esta aplicación en su computadora ejecutando lo siguiente en un shell de línea de comandos:
                         <br />
                         <code>heroku git:clone -a <?php echo $appName; ?></code>
-                        <br /> This will create a local copy of the source code, and associate the Heroku app with your local repository.</p>
+                        <br /> Esto creará una copia local del código fuente y asociará la aplicación Heroku con su repositorio local.</p>
                     <p>Follow the offical Heroku's guide <a target="_blank" href="https://devcenter.heroku.com/articles/git">https://devcenter.heroku.com/articles/git</a> to deploy using the Heroku cli.</p>
                     <p>You'll now be set up to run the app locally, or deploy changes to Heroku.</p>
                 </div>
             </div>
 
             <div class="row">
-                <h3>Examples</h3>
+                <h3>Ejemplos de</h3>
                 <p>
-                    Check the following examples, they will help you to start working with our API!
+                    Consulta los siguientes ejemplos, ¡te ayudarán a empezar a trabajar con nuestra API!
                 </p>
                 <p>
-                    Note that these examples work for MLB(Brasil) by default. If you'd like to try them in your own country, please, <a href="https://github.com/mercadolibre/php-sdk/blob/master/configApp.php#L16">update this line</a> in your project, with
-                    your own <b>$site_id</b> before executing them.
+                    Tenga en cuenta que estos ejemplos funcionan para MLB (Brasil) de forma predeterminada. Si desea probarlos en su propio país, por favor, <a href="https://github.com/mercadolibre/php-sdk/blob/master/configApp.php#L16">update this line</a> in your project, with
+                    your own <b>$site_id</b> Antes de ejecutarlas.
                 </p>
             </div>
             <hr>
