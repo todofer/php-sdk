@@ -8,15 +8,15 @@ $meli = new Meli($appId, $secretKey);
 
 if($_GET['code']) {
 
-	// If the code was in get parameter we authorize
+	// Si el código estaba en el parámetro get, autorizamos
 	$user = $meli->authorize($_GET['code'], $redirectURI);
 
-	// Now we create the sessions with the authenticated user
+	// Ahora creamos las sesiones con el usuario autenticado
 	$_SESSION['access_token'] = $user['body']->access_token;
 	$_SESSION['expires_in'] = $user['body']->expires_in;
 	$_SESSION['refresh_token'] = $user['body']->refresh_token;
 
-	// We can check if the access token in invalid checking the time
+	//Podemos comprobar si el token de acceso no es válido comprobando la hora.
 	if($_SESSION['expires_in'] + time() + 1 < time()) {
 		try {
 			print_r($meli->refreshAccessToken());
@@ -25,7 +25,7 @@ if($_GET['code']) {
 		}
 	}
 
-	// We construct the item to POST
+	// Nosotros construimos el artículo para POST
 	$item = array(
 		"title" => "Item De Teste - Por Favor, Não Ofertar! --kc:off",
         "category_id" => "MLB257111",
@@ -102,7 +102,7 @@ if($_GET['code']) {
         )
     );
 	
-	// We call the post request to list a item
+	// Llamamos a la solicitud de publicación para listar un artículo.
 	echo '<pre>';
 	print_r($meli->post('/items', $item, array('access_token' => $_SESSION['access_token'])));
 	echo '</pre>';
