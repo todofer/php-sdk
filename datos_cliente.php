@@ -28,6 +28,7 @@ $$access_token = $_SESSION['access_token'];
             echo $access_token , '<br>';
             echo $domain , '<br>';
             echo $appName, '<br>';
+            curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/sites;
         ?>
     </body>
 
