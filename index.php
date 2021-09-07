@@ -82,7 +82,7 @@ $appName = explode('.', $domain)[0];
             <div class="row">
                 <div class="col-sm-6 col-md-6">
                     <h3>oAuth</h3>
-                    <p>First authenticate yourself. Authentication is the key to get the most ouf Mercado Libre's API.</p>
+                    <p>Primero autentíquese. La autenticación es la clave para sacarle el máximo partido a la API de Mercado Libre.</p>
 
                     <?php
                     $meli = new Meli($appId, $secretKey);
@@ -99,13 +99,13 @@ $appName = explode('.', $domain)[0];
                             $_SESSION['expires_in'] = time() + $user['body']->expires_in;
                             $_SESSION['refresh_token'] = $user['body']->refresh_token;
                         } else {
-                            // We can check if the access token in invalid checking the time
+                            // Podemos comprobar si el token de acceso no es válido comprobando la hora.
                             if($_SESSION['expires_in'] < time()) {
                                 try {
-                                    // Make the refresh proccess
+                                    // Haz el proceso de actualización
                                     $refresh = $meli->refreshAccessToken();
 
-                                    // Now we create the sessions with the new parameters
+                                    // Ahora creamos las sesiones con los nuevos parámetros
                                     $_SESSION['access_token'] = $refresh['body']->access_token;
                                     $_SESSION['expires_in'] = time() + $refresh['body']->expires_in;
                                     $_SESSION['refresh_token'] = $refresh['body']->refresh_token;
@@ -126,8 +126,8 @@ $appName = explode('.', $domain)[0];
 
                 </div>
                 <div class="col-sm-6 col-md-6">
-                    <h3>Get site</h3>
-                    <p>Make a simple GET to <a href="https://api.mercadolibre.com/sites">sites resource</a> with your <b>$site_id</b> to obtain information about a a site. Like id, name, currencies, categories, and other settings.</p>
+                    <h3>Obtener sitio</h3>
+                    <p>Haz un simple GET a <a href="https://api.mercadolibre.com/sites">sites resource</a> con tu <b>$site_id</b>para obtener información sobre un sitio. Como identificación, nombre, monedas, categorías y otras configuraciones.</p>
                     <p><a class="btn" href="../examples/example_get.php">GET</a></p>
                 </div>
             </div>
@@ -137,8 +137,8 @@ $appName = explode('.', $domain)[0];
                     <h3>Publish an Item</h3>
                     <p>
                         This is a example of how to list an item in <b>MLB</b> (Brasil).
-                       <br /> <b>You need to be authenticated to make it work.</b>
-                       <br /> To be able to list an item in another country, <a href="https://github.com/mercadolibre/php-sdk/blob/master/examples/example_list_item.php">please update this file</a>, with values according to the site Id where your app works, like <b>category_id</b> and <b>currency</b>.
+                       <br /> <b>Necesita estar autenticado para que funcione.</b>
+                       <br /> Para poder publicar un artículo en otro país, <a href="https://github.com/mercadolibre/php-sdk/blob/master/examples/example_list_item.php">por favor actualice esto file</a>, con valores de acuerdo con el ID del sitio donde funciona su aplicación, como <b>category_id</b> y <b>currency</b>.
                      <br />
                     </p>
                     <pre class="pre-item">
@@ -186,7 +186,7 @@ $appName = explode('.', $domain)[0];
                             }
                         }
 
-                        // We construct the item to POST
+                        // Nosotros construimos el artículo para PUBLICAR
                         $item = array(
                             "title" => "Item De Teste - Por Favor, Não Ofertar! --kc:off",
         "category_id" => "MLB1227",
@@ -211,14 +211,14 @@ $appName = explode('.', $domain)[0];
                         
                         $response = $meli->post('/items', $item, array('access_token' => $_SESSION['access_token']));
 
-                        // We call the post request to list a item
+                        // Llamamos a la solicitud de publicación para listar un artículo.
                         echo "<h4>Response</h4>";
                         echo '<pre class="pre-item">';
                         print_r ($response);
                         echo '</pre>';
 
-                        echo "<h4>Success! Your test item was listed!</h4>";
-                        echo "<p>Go to the permalink to see how it's looking in our site.</p>";
+                        echo "<h4>¡Éxito! ¡Su elemento de prueba fue incluido!</h4>";
+                        echo "<p>Vaya al enlace permanente para ver cómo se ve en nuestro sitio.</p>";
                         echo '<a target="_blank" href="'.$response["body"]->permalink.'">'.$response["body"]->permalink.'</a><br />';
 
                     } else if($_GET['code']) {
@@ -231,8 +231,8 @@ $appName = explode('.', $domain)[0];
                 </div>
 
                 <div class="col-md-6">
-                    <h3>Get started!</h3>
-                    <p>Now you know how easy it is to get information from our API. Check the rest of the examples on the SDK, and modify them as you like in order to List an item, update it, and other actions.</p>
+                    <h3>¡Empezar!</h3>
+                    <p>Ahora sabe lo fácil que es obtener información de nuestra API. Verifique el resto de los ejemplos en el SDK y modifíquelos como desee para enumerar un elemento, actualizarlo y otras acciones.</p>
                     <p><a class="btn" href="https://github.com/mercadolibre/php-sdk/tree/master/examples">More examples</a></p>
                 </div>
             </div>
@@ -240,7 +240,7 @@ $appName = explode('.', $domain)[0];
             <hr>
 
             <div class="row">
-                <h3>Your Credentials</h3>
+                <h3>Sus credenciales</h3>
                 <div class="row-info col-sm-3 col-md-3">
                     <b>App_Id: </b>
                     <?php echo $appId; ?>
