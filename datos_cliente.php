@@ -5,7 +5,7 @@ require 'configApp.php';
 
 $domain = $_SERVER['HTTP_HOST'];
 $appName = explode('.', $domain)[0];
-$access_token = 0;
+
 ?>
 
     <!DOCTYPE html>
@@ -27,6 +27,7 @@ $access_token = 0;
             echo $access_token;
             echo $domain;
             echo $appName;
+        ?>
     </body>
 
     </html>
