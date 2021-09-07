@@ -25,9 +25,9 @@ $$access_token = $_SESSION['access_token'];
 
     <body>
         <?php
-            echo $access_token , '/n';
-            echo $domain , '/n';
-            echo $appName, '/n';
+            echo $access_token , '<br>';
+            echo $domain , '<br>';
+            echo $appName, '<br>';
         ?>
     </body>
 
