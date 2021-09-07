@@ -41,17 +41,17 @@ $appName = explode('.', $domain)[0];
         </div>
 
         <main class="container">
-            <h3>Hi, Developer!</h3>
+            <h3>Hola desarrollador</h3>
             <p>Esta es una aplicación de muestra, implementada en Heroku con PHP SDK de Mercado Libre. ¡Siéntete libre de usarlo como base para comenzar a construir tu increíble aplicación!</p>
 
             <div class="row">
                 <div class="col-md-6">
                     <h3>How it works?</h3>
                     <ul>
-                        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/go-getting-started">Heroku Button</a> on the repository.</li>
-                        <li>When Heroku received the source code it used the go tool chain to compile the application along with any vendored dependencies and created a deployable slug.</li>
-                        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-                        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
+                        <li>Esta aplicación se implementó en Heroku, ya sea usando Git o usando <a href="https://github.com/heroku/go-getting-started">Heroku Button</a> en el repositorio.</li>
+                        <li>Cuando Heroku recibió el código fuente, usó la cadena de herramientas go para compilar la aplicación junto con las dependencias vendidas y creó un slug desplegable.</li>
+                        <li>Luego, la plataforma hace girar un dinamómetro, un contenedor liviano que proporciona un entorno aislado en el que se puede montar y ejecutar la babosa.</li>
+                        <li>Puede escalar su aplicación, administrarla e implementarla <a href="https://addons.heroku.com/">150 add-on services</a>, desde el Panel de control o la CLI.</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
