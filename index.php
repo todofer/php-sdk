@@ -16,7 +16,7 @@ $appName = explode('.', $domain)[0];
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="description" content="Official PHP SDK for Mercado Libre's API.">
         <meta name="keywords" content="API, PHP, Mercado Libre, SDK, meli, integration, e-commerce">
-        <title>Mercada Libre PHP SDK</title>
+        <title>Mercado Libre PHP SDK</title>
         <link rel="stylesheet" href="/getting-started/style.css" />
         <script src="script.js"></script>
     </head>
@@ -35,14 +35,14 @@ $appName = explode('.', $domain)[0];
 
         <div class="header">
             <div>
-                <h1>Getting2 Started with Mercado Libre's PHP SDK</h1>
-                <h2>Official3 PHP SDK for Mercado Libre's API.</h2>
+                <h1>Comenzando con el SDK PHP de Mercado Libre</h1>
+                <h2>SDK PHP oficial para la API de Mercado Libre.</h2>
             </div>
         </div>
 
         <main class="container">
             <h3>Hi, Developer!</h3>
-            <p>This is a sample app, deployed to Heroku with Mercado Libre's PHP SDK. Feel free to use it as a base, to start building your awesome app!</p>
+            <p>Esta es una aplicación de muestra, implementada en Heroku con PHP SDK de Mercado Libre. ¡Siéntete libre de usarlo como base para comenzar a construir tu increíble aplicación!</p>
 
             <div class="row">
                 <div class="col-md-6">
