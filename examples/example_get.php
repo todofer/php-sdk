@@ -8,7 +8,8 @@ $params = array();
 
 $url = '/sites/' . $siteId;
 
-$result = $meli->get($url, $params);
+$result = $meli->get(https://api.mercadolibre.com/orders/2000002713305156/billing_info);
+$result1 = $meli->get($url, $params);
 
 echo '<pre>';
 print_r($result);
