@@ -13,5 +13,5 @@ $url = '/items?ids=899944948' . $siteId;
 $result = $meli->get($url, $params);
 
 echo '<pre>';
-print_r($result);
+print_r($siteId);
 echo '</pre>';
