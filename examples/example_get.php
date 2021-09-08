@@ -10,7 +10,7 @@ $url1 = '/sites/' . $siteId;
 $url = '/items?ids=899944948' . $siteId;
 
 
-$result1 = $meli->get($url, $params);
+$result = $meli->get($url, $params);
 
 echo '<pre>';
 print_r($result);
