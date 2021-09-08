@@ -8,7 +8,7 @@ $params = array();
 
 $url = '/sites/' . $siteId;
 
-$result = $meli->get(https://api.mercadolibre.com/orders/2000002713305156/billing_info);
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/orders/1691789796/billing_info
 $result1 = $meli->get($url, $params);
 
 echo '<pre>';
