@@ -243,19 +243,19 @@ $appName = explode('.', $domain)[0];
                 <h3>Sus credenciales</h3>
                 <div class="row-info col-sm-3 col-md-3">
                     <b>App_Id: </b>
-                    <?php echo $appId; ?>
+                    <?php //echo $appId; ?>
                 </div>
                 <div class="row-info col-sm-3 col-md-3">
                     <b>Secret_Key: </b>
-                    <?php echo $secretKey; ?>
+                    <?php //echo $secretKey; ?>
                 </div>
                 <div class="row-info col-sm-3 col-md-3">
                     <b>Redirect_URI: </b>
-                    <?php echo $redirectURI; ?>
+                    <?php //echo $redirectURI; ?>
                 </div>
                 <div class="row-info col-sm-3 col-md-3">
                     <b>Site_Id: </b>
-                    <?php echo $siteId; ?>
+                    <?php // echo $siteId; ?>
                 </div>
             </div>
             <hr>
