@@ -35,7 +35,7 @@ class Meli {
     public static $CURL_OPTS = array(
         CURLOPT_USERAGENT => "MELI-PHP-SDK-2.0.0", 
         CURLOPT_SSL_VERIFYPEER => true,
-        CURLOPT_CONNECTTIMEOUT => 10, 
+        CURLOPT_CONNECTTIMEOUT => 100, 
         CURLOPT_RETURNTRANSFER => 1, 
         CURLOPT_TIMEOUT => 60
     );
